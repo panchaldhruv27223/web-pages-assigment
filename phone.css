@@ -1,0 +1,41 @@
+#navbar{
+display: block;
+height: 91px;
+}
+
+#logo {
+    height: 65px;
+    width: 30px;
+    margin: 0px auto;
+}
+#navbar ul li {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+#service #detail {
+    display: flex;
+}
+
+#service #detail .box {
+    height: 208px;
+}
+
+#service #detail .box img {
+    height: 29%;
+}
+
+#home {
+    padding: 33px 49px;
+    height: 468px;
+    text-align: center;
+}
+
+#home .btn {
+    margin: 19px 5px;
+}
+
+#service #detail {
+    display: flex;
+    flex-direction: column;
+}

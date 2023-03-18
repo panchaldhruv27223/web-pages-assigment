@@ -1,117 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhruv`s Education</title>
+    <title>myfood.com</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width : 1352px)" href="css/phone.css">
 </head>
+
 <body>
-    <nav class="navbar background h-nav-resp">
-        <ul class="nav-list v-class-resp">
-            <div class="logo"><img src="PICTURE/pexels-hasan-albari-1229861.jpg" alt="LOGO"></div>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact ">Contact us</a></li>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.jpg" alt="myfood.com" height="70px" width="70px">
+        </div>
+        <ul>
+            <li id="item"><a href="#home">Home</a></li>
+            <li id="item"><a href="#service">Services</a></li>
+            <li id="item"><a href="#">About us</a></li>
+            <li id="item"><a href="#form">Contact</a></li>
         </ul>
-        <div class="rightnav v-class-resp">
-            <input type="text" name="search" id="search">
-            <button class="btn btn-sm">search</button>
-        </div>
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
     </nav>
 
-    <section class="background firstsection" id="home">
-        <div class="box-main">
-            <div class="fhalf">
-                <p class="big-text">hello idhruvpanchal</p>
-                <p class="small-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ad nobis quos voluptatum, odit obcaecati facilis excepturi temporibus incidunt 
-                </p>
-                <div class="buttons">
-                    <button class="btn">subscribe</button>
-                    <button class="btn">watch video</button>
-                </div>
+    <section id="home">
+        <h1 class="h-primary">welcome to my onlinwmeal</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque aspernatur amet delectus ullam natus</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur</p>
+        <button class="btn">order now</button>
+    </section>
+
+    <section id="service">
+        <h1 class="h-primary">our services</h1>
+        <div id="detail">
+            <div class="box">
+                <img src="/img/food2.jpg" alt="our service" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos consectetur inventore expedita culpa accusantium corrupti! Tenetur veniam nostrum expedita nobis, vero iste pariatur aut adipisci accusantium facere a numquam, aliquid, eligendi necessitatibus quae tempore.</p>
             </div>
-            <div class="shalf">
-                <img src="PICTURE/pexels-hasan-albari-1229861.jpg" class="sectionimg" alt="laptopimg">
+            <div class="box">
+                <img src="/img/food2.jpg" alt="our service" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos consectetur inventore expedita culpa accusantium corrupti! Tenetur veniam nostrum expedita nobis, vero iste pariatur aut adipisci accusantium facere a numquam, aliquid, eligendi necessitatibus quae tempore.</p>
+            </div>
+            <div class="box">
+                <img src="/img/food2.jpg" alt="our service" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos consectetur inventore expedita culpa accusantium corrupti! Tenetur veniam nostrum expedita nobis, vero iste pariatur aut adipisci accusantium facere a numquam, aliquid, eligendi necessitatibus quae tempore.</p>
             </div>
         </div>
+    </section>
+
+    <section id="client">
 
     </section>
-<hr>
-    <section class="section" id="services">
-        <div class="para">
-        <p class="sectiontag big-text">
-            nekrv ndcdidoj ofpsMXUHC OWJEFDCKMMO
-        </p>
-        <p class="sectionsubclass small-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa sit. Dolor odit, hic ipsum ipsa fuga minus libero magni deleniti a sit at adipisci?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus magni placeat porro hic, quas dolor commodi alias corrupti quaerat saepe quia facere qui quidem! Ducimus nobis alias, eius sequi blanditiis fugiat repudiandae deleniti. Dolor, id.
 
-        </p>
-    </div>
-        <div class="thumbnail">
-            <img src="PICTURE/pexels-hasan-albari-1229861.jpg" width="30%" alt="laptopimg">
+
+
+
+    <section id="form">
+        <div class="myform">
+            <form action="#" >
+                <h1 class="h-primary">contact us</h1>
+                <label for="name">Name :</label>
+                <input type="text" name="name" placeholder="enter your name">
+                <label for="email">Email :</label>
+                <input type="email" name="email" placeholder="enter your email">
+                <label for="phone">Phone number:</label>
+                <input type="phone" name="phone" placeholder="enter your phone number">
+                <label for="feedback">Feedback:</label>
+                <textarea name="feedback" id="feedback" cols="30" rows="10">give us your feedback</textarea>
+            </form>
         </div>
-    </section>
-<hr>
-    <section class="section left">
-        <div class="para">
-        <p class="sectiontag big-text">
-            nekrv ndcdidoj ofpsMXUHC OWJEFDCKMMO
-        </p>
-        <p class="sectionsubclass small-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa sit. Dolor odit, hic ipsum ipsa fuga minus libero magni deleniti a sit at adipisci?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus magni placeat porro hic, quas dolor commodi alias corrupti quaerat saepe quia facere qui quidem! Ducimus nobis alias, eius sequi blanditiis fugiat repudiandae deleniti. Dolor, id.
-
-        </p>
-    </div>
-        <div class="thumbnail">
-            <img src="PICTURE/pexels-hasan-albari-1229861.jpg" width="30%" alt="laptopimg">
-        </div>
-    </section>
-<hr>
-    <section class="section">
-        <div class="para">
-        <p class="sectiontag big-text">
-            nekrv ndcdidoj ofpsMXUHC OWJEFDCKMMO
-        </p>
-        <p class="sectionsubclass small-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa sit. Dolor odit, hic ipsum ipsa fuga minus libero magni deleniti a sit at adipisci?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus magni placeat porro hic, quas dolor commodi alias corrupti quaerat saepe quia facere qui quidem! Ducimus nobis alias, eius sequi blanditiis fugiat repudiandae deleniti. Dolor, id.
-
-        </p>
-    </div>
-        <div class="thumbnail">
-            <img src="PICTURE/pexels-hasan-albari-1229861.jpg" width="30%" alt="laptopimg">
-        </div>
-    </section>
-    <hr>
-    
-
-    <section class="contact" id="contact">
-        <h2 class="textcenter big-text">contact us</h2>
-        <div class="form">
-            <input class="form-input" type="text" name="name" id="name" placeholder="enter your name">
-            <input class="form-input" type="email" name="email" id="email" placeholder="enter your email-id">
-            <input  class="form-input"type="text" name="phone" id="phone" placeholder="enter your phone number">
-            <textarea  class="form-input"name="textarea" id="textarea" cols="30" rows="10" placeholder="Eliborate your concern"></textarea>
-            <button class="btn btn-dark">submit</button>
+        <div class="final">
+            <input type="button" value="Submit">
         </div>
     </section>
 
     <footer>
-        <div class="text-footer">
-        Copyright &copy; 2022   ||  ALL RIGHT RESERVED
-    </div>
+        <div>
+            <h1>
+                Copy right &copy; www.myfood.com
+            </h1>
+        </div>
     </footer>
-    <script src="script.js/resp.js"></script>
+
+
 </body>
+
 </html>

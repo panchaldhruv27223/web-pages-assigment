@@ -2,243 +2,176 @@
     margin: 0;
     padding: 0;
 }
+
 html{
     scroll-behavior: smooth;
 }
 
-.navbar{
+
+#navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
     position:sticky;
-    top: 0;
-    cursor: pointer;
-}
-
-.nav-list{
-    width: 40%;
-    /* background-color: red; */
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    padding: 3px
-}
-
-.nav-list li{
-    list-style: none;
-    padding: 20px;
-    font-size: 20px;
-}
-
-.nav-list li a{
-    text-decoration: none;
-    color: red;
-}
-
-.nav-list li a:hover{
-    color: black;
-}
-
-.burger{
-    position: absolute;
-    cursor: pointer;
-    right: 3%;
-    top: 15px;
-    display: none;
-}
-.line{
-    width: 33px;
-    background-color: white;
-    height: 4px;
-    margin: 5px 5px;
-
+    top: 0px;
 }
 
 
-.logo{
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+#navbar::before{
+    content: "";
 
-.logo img{
-    width: 45%;
-    border:solid white;
-    border-radius: 50%;
-}
-
-.rightnav{
-    /* background-color: yellow; */
-    width: 60%;
-    text-align: right;
-    color: red;
-    padding: 0px 10px;
-}
-
-#search{
-    padding: 8px;
-    font-size: 15px;
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: red;
-    color: white;
-}
-
-.background{
-    background: rgba(0, 0, 0, 0.7) url('../PICTURE/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
-}
-
-.firstsection{
-    height: 100vh;
-}
-.box-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: red;
-    font-family: 'Courier New', Courier, monospace;
-    max-width: 50%;
-    margin: auto;
-    height: 75%;
-}   
-
-
-.sectionimg{
-    width: 70%;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-}
-
-.fhalf{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.shalf{
-    width: 30%;
-    display: flex;
-}
-
-.big-text{
-font-size: 35px;
-}
-
-.small-text{
-font-size: 20px;
-}
-
-.btn{
-    padding: 4px 10px;
-    margin: 6px 4px;
-    border: 2px solid red;
-    border-radius: 20px;
-    font-size: 14px;
-    background: none;
-    color: red;
-    cursor: pointer;
-}
-
-.btn-sm{
-    padding: 6px;
-    vertical-align: middle;
-
-}
-
-.section{
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 80%;
-    margin: auto;
-}
-
-.sectiontag{
-    padding: 16px 0px;
-}
-.left{
-    flex-direction: row-reverse;
-}
-
-.thumbnail{
-    display: contents;
-}
-.thumbnail img{
-    border: 2px slid white;
-    border-radius: 21px;
-}
-.para{
-    padding: 0px 30px;
-}
-
-.contact{
-    /* background-color: antiquewhite; */
-    /* height: 34vh; */
-
-}
-.textcenter{
-    /* align-content: center; */
-    text-align: center;
-    /* text-decoration: underline; */
-    padding-top: 10px;
-}
-
-.form{
-    max-width: 556px;
-    margin: auto;
-    margin-top : 12px;
-}
-
-.form-input {
+    background-color: black;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.7;
     width: 100%;
-    padding: 2px 7px;
-    border-radius: 10px;
-    margin: 8px 2px;
-    font-size: 20px;
+    height:100%;
+    z-index: -1;
+
 }
 
-.btn-dark{
-    font-size: 18px;
-    border-radius: 8px;
+#logo{
+    margin: 0px 28px;
 }
 
-.text-footer{
+#logo img{
+    margin: 3px 2px;
+}
+
+#navbar ul {
+    display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.7rem;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding:3px 20px;
+    border-radius: 20px;
+    color: white;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+} 
+#home::before{
+    content: "";
+
+    background :url(../img/food1.jpg);
+    position:absolute;
+    opacity: 0.5;
+    width: 100%;
+    height:80%;
+    z-index: -1;
+
+}
+
+.h-primary{
+    font-size: 1.7rem;
+}
+#home p {
+    font-size: 1.3rem;
+}
+#home .btn{
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    background-color: brown;
+    color: white;
+    border-radius: 9px;
+    padding: 3px 6px;
+    margin: 5px 5px;
+}
+
+#service .h-primary{
     text-align: center;
-font-size: 20px;
-padding:15px 0px  ;
-background-color: rgb(51, 43, 43);
-color: rgb(231, 24, 24);
+    padding: 6px 10px;
+    margin: 5px 5px;
+    margin-top: 104px;
 }
 
 
+#service #detail{
+    display: flex;
+    
 
+}
 
-@media only screen and (max-width:1313px){
-    .nav-list{
-        flex-direction: column;
-    }
-    .navbar{
-        flex-direction: column;
-    }
-    .rightnav{
-        text-align: center;
-    }
-    #search{
-        width: 100%;
-    }
-    .burger{
-        display: block;
-    }
+#service #detail .box{
+    border: 2px solid brown;
+    height: 230px;
+    padding: 17px;
+    margin: 18px;
 
-    .h-nav-resp{
-        height: 66px;
-    }
+}
+#service #detail .box img{
+    width: 31%;
+    height: 65%;
+    display: block;
+    margin: 2px auto;
+}
 
-    .v-class-resp{
-        opacity: 0;
-    }
+#form .myform form{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+#form .myform form h1{
+        font-size: 3.7rem;
+        padding: 5px;
+        text-decoration: underline;
+        text-decoration-color: white;
+        text-decoration-style: dotted;
+}
+
+#form .myform form label{
+    margin: 4px;
+    padding: 3px;
+}
+#form .myform form input{
+    width: 235PX;
+}
+#form .final{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 6px;
+}
+#form .final input{
+    width: 100PX;
+    margin: 6px;
+    border-radius: 9px;
+}
+footer{
+    background-color: rgb(59, 57, 57);
+    color: white;
+
+}
+footer div{
+    text-align: center;
+    padding: 6px;
 }
