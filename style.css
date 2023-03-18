@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list{
+    width: 40%;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 3px
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: red;
+}
+
+.nav-list li a:hover{
+    color: black;
+}
+
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 3%;
+    top: 15px;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 5px;
+
+}
+
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 45%;
+    border:solid white;
+    border-radius: 50%;
+}
+
+.rightnav{
+    /* background-color: yellow; */
+    width: 60%;
+    text-align: right;
+    color: red;
+    padding: 0px 10px;
+}
+
+#search{
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../PICTURE/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
+}
+
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+}   
+
+
+.sectionimg{
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.fhalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.shalf{
+    width: 30%;
+    display: flex;
+}
+
+.big-text{
+font-size: 35px;
+}
+
+.small-text{
+font-size: 20px;
+}
+
+.btn{
+    padding: 4px 10px;
+    margin: 6px 4px;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-size: 14px;
+    background: none;
+    color: red;
+    cursor: pointer;
+}
+
+.btn-sm{
+    padding: 6px;
+    vertical-align: middle;
+
+}
+
+.section{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.sectiontag{
+    padding: 16px 0px;
+}
+.left{
+    flex-direction: row-reverse;
+}
+
+.thumbnail{
+    display: contents;
+}
+.thumbnail img{
+    border: 2px slid white;
+    border-radius: 21px;
+}
+.para{
+    padding: 0px 30px;
+}
+
+.contact{
+    /* background-color: antiquewhite; */
+    /* height: 34vh; */
+
+}
+.textcenter{
+    /* align-content: center; */
+    text-align: center;
+    /* text-decoration: underline; */
+    padding-top: 10px;
+}
+
+.form{
+    max-width: 556px;
+    margin: auto;
+    margin-top : 12px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin: 8px 2px;
+    font-size: 20px;
+}
+
+.btn-dark{
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.text-footer{
+    text-align: center;
+font-size: 20px;
+padding:15px 0px  ;
+background-color: rgb(51, 43, 43);
+color: rgb(231, 24, 24);
+}
+
+
+
+
+@media only screen and (max-width:1313px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        height: 66px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+}
